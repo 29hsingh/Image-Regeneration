@@ -137,7 +137,7 @@ def analytics(fitness_record, img, view_gen):
     plt.xlabel('Generations')
     plt.ylabel('Fitness Percentage')
     plt.title('** Evolution Curve **')
-    f = open('fittest.txt', 'r')   
+    f = open('fittest_bit.txt', 'r')   
     all_lines = f.readlines()
     bits = all_lines[view_gen-1]
     bit_list = list(map(int, bits.split()))
